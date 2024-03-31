@@ -1,0 +1,19 @@
+# This file sets the the board specific configuration
+# see https://docs.zephyrproject.org/latest/build/kconfig/setting.html#initial-conf
+
+if SHIELD_TUKON_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "Tukon"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif # SHIELD_TUKON_LEFT
+
+if SHIELD_TUKON_LEFT || SHIELD_TUKON_RIGHT
+
+config ZMK_SPLIT
+    default y
+    
+endif # SHIELD_TUKON_LEFT || SHIELD_TUKON_RIGHT
