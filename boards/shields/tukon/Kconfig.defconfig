@@ -26,5 +26,9 @@ config SHIELD_TUKON_PM
     select PM_DEVICE_RUNTIME
     select POWER_DOMAIN
     select POWER_DOMAIN_GPIO
+
+config ZMK_RGB_UNDERGLOW
+    select WS2812_STRIP
+    select SPI    
     
 endif # SHIELD_TUKON_LEFT || SHIELD_TUKON_RIGHT
