@@ -15,5 +15,16 @@ if SHIELD_TUKON_LEFT || SHIELD_TUKON_RIGHTs
 
 config ZMK_SPLIT
     default y
+
+config SHIELD_TUKON_PM
+    bool "Tukon Automatic Power Management"
+    default y
+    select ZMK_POWER_DOMAINS
+    select ZMK_POWER_DOMAINS_DYNAMIC_DEFAULT
+    select PM_DEVICE
+    select PM_DEVICE_POWER_DOMAIN
+    select PM_DEVICE_RUNTIME
+    select POWER_DOMAIN
+    select POWER_DOMAIN_GPIO
     
 endif # SHIELD_TUKON_LEFT || SHIELD_TUKON_RIGHT
