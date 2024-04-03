@@ -1,7 +1,7 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <dt-bindings/led/led.h>
 
-&arduino_spi {
+&pro_micro_spi {
     status = "okay";
 
     led_strip: ws2812@0 {
