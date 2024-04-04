@@ -27,19 +27,20 @@ config SHIELD_TUKON_PM
     select POWER_DOMAIN
     select POWER_DOMAIN_GPIO
 
-config ZMK_RGB_UNDERGLOW
+config TUKON_RGB_UNDERGLOW
+    bool "Tukon per Key RGB LEDs"
+    default y
+    select ZMK_RGB_UNDERGLOW
     select WS2812_STRIP
     select SPI
 
-if ZMK_DISPLAY
-
-config I2C
+config TUKON_DISPLAY
+    bool "Tukon OLED Display"
     default y
+    select ZMK_DISPLAY
+    select I2C
+    select SSD1306
 
-config SSD1306
-    default y
-
-endif # ZMK_DISPLAY
 
 if LVGL
 
@@ -57,5 +58,6 @@ choice LV_COLOR_DEPTH
 endchoice
 
 endif # LVGL
+
     
 endif # SHIELD_TUKON_LEFT || SHIELD_TUKON_RIGHT
