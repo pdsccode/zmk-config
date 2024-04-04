@@ -1,9 +1,9 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <dt-bindings/led/led.h>
 
-// pinctrl and spi3 should be placed in a seperate nice_nano_v2.overlay
-// file, if there is the intent to use the tukon shield with
-// multiple/different boards. then a specific rgb
+// pinctrl, spi3, pro_micro_i2c should be placed in a seperate
+// nice_nano_v2.overlay file, if there is the intent to use the tukon
+// shield with multiple/different boards. then a specific rgb
 // configuration for each of the different microcontrollers is needed in
 // a seperate boards/*.overlay file
 &pinctrl {
@@ -67,7 +67,6 @@
         com-sequential;
         inversion-on;
         prechargep = <0x22>;
-
     };
 };
 
