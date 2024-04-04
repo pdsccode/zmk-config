@@ -22,5 +22,3 @@ include:
     shield: "tukon_left"  
   - board: "nice_nano_v2"
     shield: "tukon_right"
-  - board: "nrf52840dk_nrf52840"
-    shield: "zmk_uno"
