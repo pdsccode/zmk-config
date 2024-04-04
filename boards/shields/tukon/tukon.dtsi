@@ -53,6 +53,8 @@
 
     oled: ssd1306@3c {
         compatible = "solomon,ssd1306fb";
+        power-domain = <&oled_power>;
+        zephyr,pm-device-runtime-auto;
         reg = <0x3c>;
         width = <128>;
         height = <32>;
@@ -65,6 +67,7 @@
         com-sequential;
         inversion-on;
         prechargep = <0x22>;
+
     };
 };
 
