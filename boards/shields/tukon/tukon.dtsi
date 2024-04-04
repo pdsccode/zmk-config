@@ -90,8 +90,8 @@
 
     oled_power: oled_power {
         compatible = "power-domain-gpio";
-        startup-delay-us = <200>;
-        off-on-delay-us = <2000>;
+        startup-delay-us = <0>;
+        off-on-delay-us = <0>;
         enable-gpios = <&pro_micro 10 GPIO_ACTIVE_HIGH>;
         power-domain = <&core_power_domain>;
         zephyr,pm-device-runtime-auto;
