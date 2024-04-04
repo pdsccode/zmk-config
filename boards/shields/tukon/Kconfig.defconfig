@@ -31,10 +31,15 @@ config ZMK_RGB_UNDERGLOW
     select WS2812_STRIP
     select SPI
 
-config ZMK_DISPLAY
+if ZMK_DISPLAY
+
+config I2C
     default y
-    select I2C
-    select SSD1306
+
+config SSD1306
+    default y
+
+endif # ZMK_DISPLAY
 
 if LVGL
 
