@@ -7,10 +7,12 @@ manifest:
     # https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
     - name: petejohanson
       url-base: https://github.com/petejohanson
+    - name: fouf96
+      url-base: https://github.com/fouf96
   projects:
     - name: zmk
-      remote: petejohanson
-      revision: power/domains-and-device-runtime
+      remote: fouf96
+      revision: power-merge-main
       import: app/west.yml
   self:
     path: config
