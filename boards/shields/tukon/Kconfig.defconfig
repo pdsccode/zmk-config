@@ -16,7 +16,7 @@ if SHIELD_TUKON_LEFT || SHIELD_TUKON_RIGHT
 config ZMK_SPLIT
     default y
 
-config SHIELD_TUKON_PM
+config TUKON_PM
     bool "Tukon Automatic Power Management"
     default y
     select ZMK_POWER_DOMAINS
