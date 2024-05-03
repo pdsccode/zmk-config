@@ -11,8 +11,8 @@ manifest:
       url-base: https://github.com/fouf96
   projects:
     - name: zmk
-      remote: fouf96
-      revision: power-merge-main
+      remote: petejohanson
+      revision: power/domains-and-device-runtime-zephyr-3.5
       import: app/west.yml
   self:
     path: config
