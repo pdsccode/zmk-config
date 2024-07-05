@@ -12,7 +12,7 @@ manifest:
   projects:
     - name: zmk
       remote: petejohanson
-      revision: power/domains-and-device-runtime-zephyr-3.5
+      revision: power/domains-and-device-runtime
       import: app/west.yml
   self:
     path: config
